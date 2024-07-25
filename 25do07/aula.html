@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //function soma (a,b) {
+          //  return a+b 
+        //}
+      //  const resultado = soma (3,4);
+        //window.alert(resultado);
+
+        /*function SomaDois(){
+            let a = parseInt(prompt("Digite um numero"));
+            let b = parseInt(prompt("Digite o segundo valor"));
+            resultado = a + b; 
+            window.alert(resultado);
+        }
+       SomaDois();*/
+
+        /*(function media(){
+           let  nota1 = parseFloat(prompt("Digite a primeira nota "));
+           let  nota2 = parseFloat(prompt("Digite  a segunda nota "));
+           let mediasemestre = (nota1 + nota2)/2
+         if (mediasemestre>= 7){
+            window.alert("Aprovado! media:" + mediasemestre);
+         } else {
+            window.alert("Reprovado! ")
+         }
+     
+         
+        }
+        media();*/
+
+        function calculartriangulo(){
+         let basetriangulo = parseFloat(prompt("Digite o valor de base de triangulo"));
+         let alturatriangulo = parseFloat(prompt("Digite a altura do triangulo "))
+         let areatriangulo = (basetriangulo * alturatriangulo) / 2 ;
+        window.alert(`A área do triangulo é: ${areatriangulo}`);
+        }
+        function calcularTrapezio() {
+            let baseMaior = parseFloat(prompt("Digite o valor da base maior do Trapezio"));
+            let baseMenor = parseFloat(prompt("Digite o valor da base menor do Trapezio"));
+            let altura = parseFloat(prompt("Digite o valor da altura do Trapezio"));
+            let area = ((baseMaior + baseMenor) * altura) / 2;
+            window.alert(`A area do Trapezio é: ${area}`)
+        }
+
+        function calcularCirculo() {
+            let raio = parseFloat(prompt("Digite o valor do raio do Circulo"));
+            let area = Math.PI * raio ** 2;
+            window.alert(`A area do Circulo é ${area}`);
+        }
+        // Dois asteristico (**) é a mesma coisa que o (^) os dois servem para falar que é elevado
+
+        function calcularQuadrado() {
+            let lado = parseFloat(prompt("Digite o valor do lado do Quadrado"));
+            let area = lado ** 2;
+         window.alert(`A area do Quadrado é ${area}`);
+        }
+        var figura = prompt("Digite o tipo de figura geometrica (triangulo (1), trapezio(2), ciculo (3)ou quadrados (4))").toLowerCase();
+        switch (figura) {
+
+            case "1":
+                calculartriangulo();
+                break;
+
+            case "2":
+                calcularTrapezio();
+                break;
+
+            case "3":
+                calcularCirculo();
+                break;
+
+            case "4":
+                calcularQuadrado();
+                break;
+
+            default:
+                window.alert("Figura não reconhecida");
+        }
+    </script> 
+    </script>
+</body>
+</html>
