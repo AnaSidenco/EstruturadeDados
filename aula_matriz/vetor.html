@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Cria um array para armazenar os dados dos alunos
+        let alunos = [];
+
+        // Função para ler os dados de uma aluno 
+        function lerdadosaluno(){
+             let nome = prompt("Digite o nome do aluno:")
+             let faltas = parseInt(prompt("Digite o numero de faltas  do aluno"))
+             let media = parseFloat(prompt("Digite a madia do aluno"))
+
+             //Cria um objeto com ps dados do aluno
+             let aluno = {
+                 nome: nome,
+                 faltas: faltas,
+                 media: media,
+             };
+             //adiciona o aluno com os dados do aluno 
+           aluno.push(aluno)
+        }
+        // Le os dados  de 4 alunos 
+        for (let i = 0; i < 4; i++){
+            lerdadosaluno();
+
+        }
+        // Exibe a listagem dos alunos 
+        window.alert("Listagem dos alunos:")
+        for (let aluno of alunos){
+            window.alert(`Nome: ${aluno.nome}, Faltas: ${aluno.faltas}, Media: ${aluno.media}`);
+
+        }
+
+    </script>
+</body>
+</html>
